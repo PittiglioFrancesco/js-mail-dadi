@@ -6,3 +6,25 @@
 // si ma noi cosa vogliamo fare?
 // torniamo a scrivere in italiano
 // proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+
+// input
+
+var dadoCPU = (Math.random() * (7 - 1) + 1);
+
+var dadoPlayer = (Math.random() * (7 - 1) + 1);
+
+// operazioni
+
+if (dadoCPU < dadoPlayer) {
+    
+    document.getElementById("risultato").innerHTML = "Hai vinto! :)";
+
+} else if (dadoCPU > dadoPlayer) {
+
+    document.getElementById("risultato").innerHTML = "Hai perso... :(";
+   
+} else {
+
+    document.getElementById("risultato").innerHTML = "!!!Pareggio!!!";
+
+}
